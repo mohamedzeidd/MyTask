@@ -17,4 +17,4 @@ jobs:
         run: pwd
 
       - name: 'test printing'
-        run: exho mario 
+        run: echo mario 
