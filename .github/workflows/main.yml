@@ -21,4 +21,10 @@ jobs:
       - name: 'login'
         run: docker login --username ${{secrets.DOCKERUSERNAME}} --password ${{secrets.DOKCERTOKEN}}
 
+      - name: 'build image'
+        run: docker buld -t ${{secrets.DOCKERUSERNAME}}/newimage .
+        
+      - name: 'push image'
+        run: docker push ${{secrets.DOCKERUSERNAME}}/newimage
+
       
