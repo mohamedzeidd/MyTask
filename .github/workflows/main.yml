@@ -16,11 +16,9 @@ jobs:
       - name: 'testing action'
         run: pwd
 
-      - name: 'test printing'
-        run: echo mario 
-      - name: 'before'
-        run: ls
       - uses: actions/checkout@v3
 
-      - name: 'after'
-        run: ls   
+      - name: 'login'
+        run: docker login --username mohamedzeidd --password dckr_pat_3iHyCgDO-3TBBnqMdXzPm9Dfk5E
+
+      
